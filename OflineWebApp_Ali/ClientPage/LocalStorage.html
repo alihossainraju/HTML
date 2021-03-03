@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/StyleLocalStorage.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/ScriptForLocalStorage.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li>
+                <i><b><a href="Home.html">Home</a></b></i>
+            </li>
+            <li>
+                <i><b><a class="active" href="#">Local Storage</a></b></i>
+            </li>
+            <li>
+                <i><b><a href="SessionStorage.html">Session Storage</a></b></i>
+            </li>
+            <li>
+                <i><b><a href="IndexedDB.html">Indexed DB</a></b></i>
+            </li>
+            <li>
+                <i><b><a href="WebSQL.html">Web SQL</a></b></i>
+            </li>
+        </ul>
+    </nav>
+    <div id="container">
+        <header>
+            <hgroup id="headerText">
+                <h1>
+                    Keep track of library books
+                </h1>
+            </hgroup>
+        </header>
+        <div role="main">
+            <table id="contacts">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Father Name</th>
+                        <th>Mother Name</th>
+                        <th>Date Of Birth</th>
+                        <th>Book Name</th>
+                        <th>Roll No</th>
+                        <th>Phone No</th>
+                        <th>Email</th>
+                        <th>File</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="editContact">
+                <h2 id="currentActoin"></h2>
+
+                <div>
+                    <b><label for="firstName">First Name : </label></b>
+                    <input type="text" id="firstName" name="firstName" />
+                </div>
+
+                <div>
+                    <b><label for="lastNme">Last Name : </label></b>
+                    <input type="text" id="lastName" name="lastName" />
+                </div>
+
+                <div>
+                    <b><label for="fatherName">Father Name : </label></b>
+                    <input type="text" id="fatherName" name="fatherName" />
+                </div>
+
+                <div>
+                    <b><label for="motherName">Mother Name : </label></b>
+                    <input type="text" id="motherName" name="motherName" />
+                </div>
+
+                <div>
+                    <b><label for="birthDate">Date Of Birth : </label></b>
+                    <input type="date" id="birthDate" name="birthDate" />
+                </div>
+
+                <div>
+                    <b><label for="nid">Book Name : </label></b>
+                    <input type="text" id="nid" name="nid" />
+                </div>
+
+                <div>
+                    <b><label for="traineeid">Roll No : </label></b>
+                    <input type="text" id="traineeid" name="traineeid" />
+                </div>
+
+                <div>
+                    <b><label for="email">Email Address : </label></b>
+                    <input type="text" id="email" name="email" />
+                </div>
+
+                <div>
+                    <b><label for="phoneNumber">Phone Number : </label></b>
+                    <input type="text" id="phoneNumber" name="phoneNumber" />
+                </div>
+
+                <div class="form-control">
+                    <b><label for="fileUpload">Upload File</label></b>
+                    <input type="file" name="fileUpload" id="fileUpload" />
+                </div>
+
+                <div>
+                    <b><label class="buttons"></label></b>
+                    <button id="btnSave" name="save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
